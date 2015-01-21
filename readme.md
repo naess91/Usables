@@ -1,55 +1,188 @@
-<h2>Kmom01: Kom igång med JavaScript</h2>
-<b>Allmänt</b> 
-<p>   
-Då var det dags för en ny kurs och jag är verkligen taggad. Har sedan länge velat lära mig JavaScript eftersom det ger mer dynamik på en webbplats. Så därför ska det bli mycket roligt att läsa denna kurs. Det första kursmomentet kändes som en lagom start där man fick lära sig lite grunder och testa modifiera befintlig kod för att se vad varje variabel har för funktion. I övrigt så var det även intressant läsning </p>
-<b>Vilken utvecklingsmiljö använder du?</b>
-<p>Jag arbetar på en Mac och använder Dreamweaver som utvecklingsprogram. Min lokala server drivs med hjälp av mamp. Sedan använder jag MacDown för att skriva text i markdown.</p>
-<b>Hur väl känner du till JavaScript?</b>
-<p>Jag känner till det sen tidigare men jag har aldrig jobbat med det så det ska bli väldigt kul att lära sig det i denna kurs. Jag har stött på det när jag arbetat i wordpress men har aldrig aldrig haft någon förståelse för det.</p>
-<b>Vilken uppfattning har du av JavaScript så här långt?</b>
-<p>Min uppfattning av JavaScript är att det ger mer dynamik och effekt på en webbplats. Det kan vara allt ifrån ett bildspel till innehåll visas visas när man endast är på en viss plats. En webbplats blir med andra ord mer "levande" med JavaScript.</p>
+<h1>Dokumentation Usables</h1>
+<p>Usables innehåller ett flertal användbara plugins för att göra din webbplats mer dynamisk och interaktiv.
+Det finns fem stycken som du kan använda var för sig eller slå ihop om man vill det. Dessa plugins är:<br />
+- Kontaktformulär <br />
+- Bild karusell	<br />
+- Lightbox	<br />
+- Bild galleri<br />
+- Visa/Dölj innehåll<br /></p>
 
-<b>Berätta vilka exempelprogram du gjorde och länka till dem.</b>
-<p>Jag gjorde samma exempelprogram som fanns med i <b>JavaScript - argh! - måste jag?</b> vilka var:<br>
-<a href = "http://www.student.bth.se/~ernb14/javascript/kmom01/baddie/">Moving baddie</a><br>
-<a href = "http://www.student.bth.se/~ernb14/javascript/kmom01/baddie2/">Transforming baddie</a><br>
-<a href = "http://www.student.bth.se/~ernb14/javascript/kmom01/resize/">Resize</a><br>
-<a href = "http://www.student.bth.se/~ernb14/javascript/kmom01/mall/">Mall</a><br>
-<a href = "http://jsfiddle.net/naess1991/ryqa3ote/"> JSFiddle</a></p>
+<p>För att kunna använda något av dessa plugins krävs först:</p>
+<div class = "code">
+<p><xmp><script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script></xmp></p>
+</div>
 
-<b>Beskriv hur du gjort din baddie och vilka konster den kan.</b>
-<p>Jag modifierade den exempelkod som presenterades <b>JavaScript - argh! - måste jag?</b> där jag testade att ändra lite inställningar för att se vad som hände.</p>
-<b>Gjorde du extrauppgiften och utbildade din baddie med något extra?</b>
-<p>Jag gjorde inte extrauppgiften</p>  
-<h2>Kmom02: Programmera med JavaScript</h2>
-<b>Allmänt:</b>
-<p>I detta kursmoment fick man lite övning i allt möjligt. Det var en del roliga övningar som man fick sitta och klura med. Det var lite knepigt att sitta på egen hand så det blev att jämföra mycket av koden när man satt och övade. Men det kändes som övningarna var nyttiga. Jag hade inga jätte problem med någon av uppgifterna även om jag till en början hade svårt att få fram bollen. Det visade sig vara div taggen i index.php som stämde. Men som fungerade utmärkt efter att jag ändrat den. </p>
+<h2>Kontaktformulär</h2>
+<p>Installation</p>
+<p>1. Börja med att integrera contactform.js</p>
+<div class = "code">
+<p><xmp><script src="contactform.js"></script></xmp></p>
+</div>
+<p>2. Lägg sedan filen contact.php i samma mapp som din sidkontroller (t.ex. index.php)</p>
+<p>3. Skapa ditt formulär. Exempel</p>
+<div class = "code">
+<p><xmp> <div class="form-style" id="contact_form">
+   
+    <div id="contact_results"></div>
+    <div id="contact_body">
+<label><span>Namn <span class="required">*</span></span>
+<input type="text" name="name" id="name" required="true" class="input-field"/>
+</label>
+<label><span>Email <span class="required">*</span></span>
+<input type="email" name="email" required="true" class="input-field"/>
+</label>
+<label><span>Telefon<span class="required">*</span></span>
+<input type="text" name="phone2" maxlength="15"  required="true" class="input-field" />
+</label>
+<label><span>Ämne<span class="required">*</span></span>
+<input name="subject" class="input-field" type = "text" required ="true"  >
+</label>
+<label><span>Meddelande <span class="required">*</span></span>
+<textarea name="message" id="message" class="textarea-field" required="true"></textarea>
+</label>
+<label>
+<span>&nbsp;</span><input type="submit" id="submit" value="Skicka" />
+</label> </div>
+</div></xmp></p>
+</div>
+<p>Där du med hjälp av klassen "form-style" bestämmer hur formuläret ska se ut. Som du kan modifiera i filen contactform.less</p>
+<p>4. Inkludera contactform.less</p>
 
-<b>Uppgifterna:</b>
-<p>Tycker att uppgifterna i allmänhet var roliga och lärorika. De första uppgifterna var inte så kluriga men när man kom till bollen och framåt så blev det svårare. Jag måste erkänna att det blev en del tjuvkikande då jag inte riktigt kommit in i JavaScript tänket i kodandet. Men tycker däremot det är väldigt intressant och kul. Det blev mycket testande på exempelkoden som fanns för att se hur scripten fungerade. Blev inget fördjupande i detta kursmoment då jag varit lite lat och haft fullt upp med annat under julhelgerna. </p>
 
-<b>Mos.js</b>
-<p>Till denna uppgift så la jag endast till det som krävdes då jag inte känner att fler funktioner känns nödvändiga än så länge men kommer säkert byggas på med kursens gång. Har lagt till slumpa tal plus lite till.</p>
+<br />
+<h2>Bildkarusell</h2>
+<p>Installation</p>
+<p>1. Integrera carousel.js</p>
+<div class = "code">
+<p><xmp><script src="lightbox.js"></script></xmp></p>
+</div>
+<p>2. Skriv ut html koden för karusellen med klasserna "scroll left/right", "carousel" och "carousel-list".
+<div class = "code">
+<p><xmp>
+<div class='scroll-left'><img src='img/img-carousel/left.png' /></div>  
+  <div class='carousel'>  
+        <ul class='carousel-list'>  
+        
+            <li><img src="img/img-carousel/bild1.jpg" class="thumb"></li> 
+            <li><img src="img/img-carousel/bild2.jpg" class="thumb"></li>
+    		<li><img src="img/img-carousel/bild3.jpg" class="thumb"></li>
+   		</ul>  
+  </div>  
+  
+  <div class='scroll-right'><img src='img/img-carousel/right.png' /></div>  
+    
+</div>  
+</xmp></p>
+</div>
+<p>3. Inkludera stylesheet carousel.less</p>
+<p>4. Vill du ha stöd för light box (valfritt) behöver du lägga till detta i html koden. Resten av installationen finns längre ner.</p>
+<div class = "code">
+<p><xmp>
+        <ul class='carousel-list'>  
+        <div id = "imageSet">
+            <li><a href="img/img-carousel/bild1.jpg" class="lightbox"> 
+<img src="img/img-carousel/bild1.jpg" class="thumb"></a></li> 
+            <li><a href="img/img-carousel/bild2.jpg" class="lightbox"> 
+<img src="img/img-carousel/bild2.jpg" class="thumb"></a></li>
+    <li><a href="img/img-carousel/bild3.jpg" class="lightbox"> 
+<img src="img/img-carousel/bild3.jpg" class="thumb"></a></li>
+    <li><a href="img/img-carousel/bild4.jpg" class="lightbox"> 
+<img src="img/img-carousel/bild4.jpg" class="thumb"></a></li>
+    <li><a href="img/img-carousel/bild5.jpg" class="lightbox"> 
+<img src="img/img-carousel/bild5.jpg" class="thumb"></a></li>
+            
+           </div> 
+   		</ul>  
+ 
+</xmp></p>
+</div>
+<br />
 
-<B>Extrauppgifter</b>
-<p>Gjorde inga extrauppgifter</p>
 
 
-<b>Länk till rapport/uppgifterna</b>
-<p>
-<a href = "http://www.student.bth.se/~ernb14/javascript/kmom02/page/">Rapport/Redovisning</a></p>
+<h2>Lightbox</h2>
+<p>Installation</p>
+<p>1. Integrera lightbox.js</p>
+<div class = "code">
+<p><xmp><script src="lightbox.js"></script></xmp></p>
+</div>
+<p>2. Skriv ut html kod. Viktigt att lägga bilderna inom "imageSet". Sedan behöver man lägga till klassen
+lightbox i varje a tagg. Annars kommer inte bilden att visas i lightboxen.
+<div class = "code">
+<p><xmp>
+<div id = "imageSet">
+            <li><a href="img/bild1.jpg" class="lightbox"> 
+<img src="img/bild1.jpg" class="thumb"></a></li> 
+            <li><a href="img/bild2.jpg" class="lightbox"> 
+<img src="img/bild2.jpg" class="thumb"></a></li>
+    <li><a href="img/bild3.jpg" class="lightbox"> 
+<img src="img/bild3.jpg" class="thumb"></a></li>
+    <li><a href="img/bild4.jpg" class="lightbox"> 
+<img src="img/bild4.jpg" class="thumb"></a></li>
+    <li><a href="img/bild5.jpg" class="lightbox"> 
+<img src="img/bild5.jpg" class="thumb"></a></li>
+            
+           </div>
+             
+</xmp></p>
+</div>
+<p>3. Inkludera stylesheet lightbox.less</p>
 
-<h2>Kmom03: Grunderna i JQuery</h2>
-<b>Allmänt:</b>
-<p>Då har man fått känna på JQuery lite grann och jag måste säga att det känns väldigt kul. Med JQuery så kan man får så mycket mer grafik och dynamik på en hemsida vilket känns som ett måste idag för att hemsidan ska vara modern och tilltalande. Exempel uppgifterna var roliga och lärorika och det kändes inte allt för svåra. Det var en precis lagom nivå eftersom jag aldrig arbetat med JQuery tidigare.</p>
+<br />
 
-<b>Vad tycker du om JQuery, hur känns det?</b>
-<p>Från de intryck jag fått av uppgifterna och kurslitteraturen så är jag väldigt positivt inställd och vill lära mig mer. Eftersom en modern hemsida nästan kräver JQuery kan jag känna. Så det känns väldigt kul att lära mig grunderna som jag sedan kan bygga vidare på.</p>
+<h2>Galleri</h2>
+<p>Installation</p>
+<p>1. Integrera gallery.js</p>
+<div class = "code">
+<p><xmp><script src="expand.js"></script></xmp></p>
+</div>
+<p>2. Skriv ut html kod. Exempel.
+<div class = "code">
+<p><xmp>
+<div id="gallery">
+	<img src="img/img-gallery/bild1.jpg" alt="" id="main-img" />
+	<ul class = "thumb">
+	  <li><img src="img/img-gallery/bild1.jpg" alt="" /></li>
+	  <li><img src="img/img-gallery/bild2.jpg" alt="" /></li>
+	  <li><img src="img/img-gallery/bild3.jpg" alt="" /></li>
+	  <li><img src="img/img-gallery/bild4.jpg" alt="" /></li>
+	  <li><img src="img/img-gallery/bild5.jpg" alt="" /></li>
+	</ul>
+</div>
+</xmp></p>
+</div>
+<p>3. Inkludera stylesheet gallery.less</p>
+<br />
 
-<b>Vad är dina erfarenheter av JQuery inför detta kursmoment?</b>
-<p>JQuery är något jag aldrig arbetat med innan så jag har inga erfarenheter. Jag har stött på det i Wordpress men aldrig arbetat med det så att jag vet vad jag gör.</p>
+<h2>Visa/Dölj innehåll</h2>
+<p>Installation</p>
+<p>1. Integrera expand.js</p>
+<div class = "code">
+<p><xmp><script src="expand.js"></script></xmp></p>
+</div>
+<p>2. Skriv ut html kod. Exempel.
+<div class = "code">
+<p><xmp>
+<div class="expand">
+<div class="topic">Kommentarer <span class = "show">v</span></div>
+<div class="content"><img src =
+"https://www.google.com/help/hc/images/blogger/blogger_1725597_threaded_comments_en.png"/>
+</div>
+<br />
+<div class="topic">Lämna kommentar<span class = "show">v</span></div>
+<div class="content"><img style = "margin:20px; 0" src = 
+"http://webdeveloperplus.com/wp-content/uploads/2009/09/WordPress-Comment-Form.png" />
+</div>
+<br />
 
-<b>Berätta om ditt plugin</b>
-<p>Jag valde att bygga på den lightbox som fanns med bland exempeluppgifterna. Detta genom att lägga till bildens titel under bilden samt lägga till en stäng knapp för att förtydliga lite extra. Detta plugin kommer jag försöka bygga vidare på så man kan växa bild direkt i lightbox läget istället för att stänga ner och sedan öppna upp igen. Vill även lägga till så man ser hur många bilder det finns och vilket bildnummer man är på. </p>
+<div class="topic">Dela<span class = "show">v</span></div>
+<div class="content"><h3 style = "float:left; margin-left:70px;">Dela innehåll på:</h3>
+<img src = "http://iconion.com/posts/video/social-icons/social-icons.jpg" width = "550" /> 
+</div>
 
-<p>Länk till <a href = "http://www.student.bth.se/~ernb14/javascript/kmom03/lightbox/">plugin</a>
+                            
+ 	</div>  
+</xmp></p>
+</div>
+<p>3. Inkludera stylesheet expand.less</p>
+			    
