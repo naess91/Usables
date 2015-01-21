@@ -183,6 +183,8 @@ lightbox i varje a tagg. Annars kommer inte bilden att visas i lightboxen.
                             
  	</div>  
 </xmp></p>
-</div>
+
 <p>3. Inkludera stylesheet expand.less</p>
+
+
 			    
